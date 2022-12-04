@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Setting</title>
+    <link rel="stylesheet" href="./css/Dashboard.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100;200;300;400;500;600;700;800&family=Lobster&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Pacifico&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+      </style>
+  </head>
+  <body>
+    <div class="page">
+      <div class="sidebar"> 
+        <h3>Ahmed</h3>
+        <ul>
+          <li class="active"><a href="index.html"> <i class="fa-fw fa-brands fa-phoenix-squadron"></i><span>Home</span></a></li>
+          <li><a href="Setting.html"> <i class="fa-fw fa-solid fa-gear"></i><span>Setting</span></a></li>
+          <li><a href="Profile.html"> <i class="fa-fw fa-solid fa-address-card"></i><span>Profile</span></a></li>
+          <li><a href="Projects.html"> <i class="fa-fw fa-solid fa-diagram-project"></i><span>Projects</span></a></li>
+          <li><a href="Course.html"> <i class="fa-fw fa-brands fa-discourse"></i><span>Course</span></a></li>
+          <li><a href="Frineds.html"> <i class="fa-fw fa-solid fa-user-group"></i> <span>Frineds</span></a></li>
+          <li><a href="Files.html"> <i class="fa-fw fa-solid fa-file"></i></i><span>Files</span></a></li>
+        </ul>
+      </div>
+      <div class="content">
+        <div class="head">
+          <div class="container">
+          <div class="search"><input type="text" placeholder="Type A keyword"></div>
+          <div class="icon">
+            <div class="rounded"><i class="fa-regular fa-bell"></i></div>
+            <img src="./imgs/avatar.png" alt="">
+          </div>
+        </div>
+      </div>
+        <h1>Setting</h1>
+        <div class="wrapper">
+          <div class="box control" id="control">
+            <h2 class="perfect">Site control</h2>
+            <p>Control The Website If There Is Maintenance</p>
+            <div class="group">
+              <div >Website Control<span>Open/Close Website And Type The Reason</span></div>
+              <label>
+                <input type="checkbox" class="toggle">
+                <div class="toggle-switch"></div>
+              </label>
+            </div>
+            <textarea placeholder="Close Message Content"></textarea>
+          </div>
+          <div class="box general">
+            <div class="perfect">General Info</div>
+            <p>General Information About Your Account</p>
+            <div class="form">
+              <input type="text" >
+              <label >First Name</label>
+            </div>
+            <div class="form">
+              <input type="text" >
+              <label >Last Name</label>
+            </div>
+            <div class="form">
+              <input class="email" type="text" value="Ahmed@gamil.com" disabled>
+              <!-- <label >Email</label> -->
+            </div>
+          </div>
+          <div class="box security">
+            <div class="perfect">Security Info</div>
+            <p>Security Information About Your Account</p>
+            <div class="group1">
+              <h2>passowrd <span>Last Change On 25/10/2021</span></h2>
+              <button><a href="#control">Change</a></button>
+            </div>
+            <div class="group1">
+              <h2>Two-Factor Authentication <span>Enable/Disable The Feature</span></h2>
+              <label>
+                <input type="checkbox" class="toggle">
+                <div class="toggle-switch"></div>
+              </label>
+            </div>
+            <div class="group1">
+              <h2>Devices <span>Check The Login Devices List</span></h2>
+              <button><a href="#control">Devices</a></button>
+            </div>
+          </div>
+          <div class="box Social-Info">
+            <div class="perfect">Social Info</div>
+            <p>Social Media Information</p>
+            <ul>
+              <li><input type="text" placeholder="Twitter Username"><i class="fa-brands fa-twitter"></i></li>
+              <li> <input type="text" placeholder="Facebook Username"> <i class="fa-brands fa-facebook"></i></li>
+              <li> <input type="text" placeholder="Linkedin Username"><i class="fa-brands fa-linkedin"></i></li>
+              <li><input type="text" placeholder="Youtube Username"> <i class="fa-brands fa-youtube"></i> </li>
+            </ul>
+          </div> 
+          <div class="box widgets">
+            <div class="perfect">Widgets Control</div>
+            <p>Show/Hide Widgets</p>
+            <ul>
+              <li><input id="one" type="checkbox"><label for="one">Quick Draft</label> </li>
+              <li><input id="two" type="checkbox"><label for="two">Yearly Targets </label> </li>
+              <li><input id="three" type="checkbox"><label for="three">Tickets Statistics </label> </li>
+              <li><input id="four" type="checkbox"><label for="four">Latest News </label> </li>
+              <li><input id="five" type="checkbox"><label for="five">Latest Tasks </label> </li>
+              <li><input id="six" type="checkbox"><label for="six">Top Search Items </label> </li>
+            </ul>
+          </div>
+          <div class="box backup">
+            <div class="perfect">Backup Manager</div>
+            <p>Control Backup Time And Location</p>
+            <ul>
+              <li><input id="siven" type="checkbox"><label for="siven">Daily</label> </li>
+              <li><input id="eight" type="checkbox"><label for="eight">Weekly</label> </li>
+              <li><input id="nine" type="checkbox"><label for="nine">Monthly</label> </li>
+              
+            </ul>
+            <div class="group">
+              <div class="active content1">
+                <i class="fa-solid fa-database"></i>
+                <h2>Megaman</h2>
+              </div>
+              <div class="content1">
+                <i class="fa-solid fa-database"></i>
+                <h2>Zero</h2>
+              </div>
+              <div class="content1">
+                <i class="fa-solid fa-database"></i>
+                <h2>Sigma</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <script src="./js/Dashboard.js"></script>
+  </body>
+</html>
